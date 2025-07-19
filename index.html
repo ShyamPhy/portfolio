@@ -1,168 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #f9f9f9;
-      --text-color: #333;
-      --primary-color: #0077cc;
-      --card-bg: #fff;
-    }
-    body.dark {
-      --bg-color: #1e1e1e;
-      --text-color: #eee;
-      --primary-color: #66d9ef;
-      --card-bg: #2c2c2c;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      background: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      padding: 20px;
-      transition: background 0.3s, color 0.3s;
-    }
-    header, section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-      background: var(--card-bg);
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: var(--primary-color);
-    }
-    section {
-      margin-top: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    }
-    h2 {
-      margin-bottom: 10px;
-      font-size: 1.8rem;
-      color: var(--primary-color);
-    }
-    ul {
-      list-style: disc inside;
-      margin-left: 20px;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #999;
-    }
-    .dark-toggle {
-      margin-top: 20px;
-      cursor: pointer;
-      background: var(--primary-color);
-      color: white;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 6px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    input, textarea {
-      margin-bottom: 15px;
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    input[type="submit"] {
-      background: var(--primary-color);
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Dr. Shyam Babu | Assistant Professor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .project, .publication {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Shyam Priya</h1>
-    <p>Web Developer | Creative Thinker | Problem Solver</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-  </header>
 
-  <section id="about">
+<header>
+    <h1>Dr. Shyam Babu</h1>
+    <p>Assistant Professor | Researcher | Mentor</p>
+    <a href="resume.pdf" class="btn" download>Download Resume (PDF)</a>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
     <h2>About Me</h2>
-    <p>I’m a passionate web developer with a knack for building clean, responsive websites. I love turning ideas into reality using code.</p>
-  </section>
+    <p>I am an Assistant Professor with a passion for teaching, research in Artificial Intelligence and Physics, and mentoring students. I have published multiple research papers and lead various academic projects.</p>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
+<section id="research">
+    <h2>Research Interests</h2>
     <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>React, Tailwind CSS</li>
-      <li>Node.js, Express</li>
-      <li>Version Control (Git)</li>
+        <li>Artificial Intelligence & Machine Learning</li>
+        <li>Non-Collinear Magnetic Systems</li>
+        <li>Computational Physics</li>
+        <li>Education Technology and Innovation</li>
     </ul>
-  </section>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<section id="teaching">
+    <h2>Teaching Subjects</h2>
     <ul>
-      <li><strong>Portfolio Website</strong> – A responsive portfolio site to showcase my skills.</li>
-      <li><strong>Task Manager</strong> – A web app to track daily tasks and boost productivity.</li>
-      <li><strong>Blog Platform</strong> – A lightweight blogging CMS with markdown support.</li>
+        <li>Digital Electronics</li>
+        <li>Electromagnetism</li>
+        <li>Machine Learning Fundamentals</li>
+        <li>Research Methodology</li>
     </ul>
-  </section>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message">
+<section id="projects">
+    <h2>Current & Past Projects</h2>
+    <div class="project">
+        <strong>Title:</strong> Integrating GPT-based AI into Indian Higher Education<br>
+        <strong>Funding Agency:</strong> UGC Minor Research Grant<br>
+        <strong>Role:</strong> Principal Investigator
+    </div>
+    <div class="project">
+        <strong>Title:</strong> Development of Smart Assessment Tools for Physics<br>
+        <strong>Funding Agency:</strong> State Higher Education Council<br>
+        <strong>Role:</strong> Co-Investigator
+    </div>
+</section>
+
+<section id="publications">
+    <h2>Recent Publications</h2>
+    <div class="publication">
+        <strong>2024:</strong> "Emerging Paradigms in Non‑Collinear Spin States", Science & Tech Journal
+    </div>
+    <div class="publication">
+        <strong>2023:</strong> "AI in Rural Education", International Journal of Education
+    </div>
+    <div class="publication">
+        <strong>2022:</strong> "Spin Texture Transitions in Thin Magnetic Films", Physics Letters A
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mgebrwnv" method="POST">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email Address" required>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
     </form>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-  </section>
+</section>
 
-  <footer>
-    &copy; 2025 Shyam Priya. All rights reserved.
-  </footer>
+<footer>
+    &copy; 2025 Dr. Shyam Babu | Assistant Professor
+</footer>
 
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark');
-    }
-  </script>
 </body>
 </html>
